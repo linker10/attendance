@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+{%load static%}
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>By WaQas</title>
+
+    <link rel="stylesheet" href="{% static   'css/style.css' %}" media="screen" type="text/css" />
+
+</head>
+
+<body>
+
+  <span href="#" class="button" id="toggle-login">DEVELOPED BY WAQAS SAFDAR</span>
+
+<div id="login">
+  <div id="triangle"></div>
+  <h1>KFUEIT ATTENDANCE SYSTEM</h1>
+ <form action="" method="post"> {% csrf_token %}
+    <input type="text" id="sname" name="sname" style="  width:92%;
+  background:#fff;
+  margin-bottom:4%;
+  border:1px solid #ccc;
+  padding:4%;
+  font-family:'Open Sans',sans-serif;
+  font-size:95%;
+  color:#555; " placeholder="STU-NAME" />
+    <input type="text" style="  width:92%;
+  background:#fff;
+  margin-bottom:4%;
+  border:1px solid #ccc;
+  padding:4%;
+  font-family:'Open Sans',sans-serif;
+  font-size:95%;
+  color:#555;" id="sid" name="sid" placeholder="ROLL NO/REG NO" />
+    <input type="submit" value="PRESENT" />
+  </form>
+</div>
+
+
+</body>
+
+</html>
